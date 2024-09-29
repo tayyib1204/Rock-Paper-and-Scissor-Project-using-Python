@@ -36,31 +36,45 @@ it print as 'You have entered wrong input'
 
 If any of the coditions are not satisfies, in else part we print as 'You have entered wrong input'.
 
-    import random
+    import random 
     rock = '✊'
     paper = '✋'
     scissor = '✌️'
-    game_images = [rock, paper, scissor]
-    user_choice = int(input("0 for Rock, 1 for Paper, 2 for Scissor: "))
+    
+    # Values are taken for above 3 variables as stricker images from the internet
+    
+    game_images = [rock, paper, scissor] # Created a list of three variables
+    user_choice = int(input("0 for Rock, 1 for Paper, 2 for Scissor: "))  #User iput is taken using input function
+    
+    # By default input function is in string format. so we are using int function to covert string to integer
+    
     if user_choice >= 3 or user_choice < 0:
         print("Enter numbers between 0 to 1")
+    
     else:
     print(game_images[user_choice])
     computer_choice = random.randint(0, 2)
     print(f"Computer choice: {computer_choice}")
     print(game_images[user_choice])
+    
     if user_choice == 0 and computer_choice == 2:
         print("You Win")
+    
     elif user_choice == 2 and computer_choice == 0:
         print("You Loss")
+    
     elif user_choice > computer_choice:
         print("You Win")
+    
     elif computer_choice > user_choice:
         print("You Loss")
+    
     elif user_choice == computer_choice:
         print("Draw")
+    
     elif (user_choice > 2 or user_choice <0) and (computer_choice >2 or computer_choice < 0):
         print("You have entered wrong input")
+    
     else:
         print("You have entered wrong input")
 
