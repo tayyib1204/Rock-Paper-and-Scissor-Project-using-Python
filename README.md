@@ -35,3 +35,8 @@ user_choice > 2 or user_choice <0) and (computer_choice >2 or computer_choice < 
 it print as 'You have entered wrong input'
 
 If any of the coditions are not satisfies, in else part we print as 'You have entered wrong input'
+
+
+
+ 
+
